@@ -1,17 +1,9 @@
 'use client'
 import { useEffect, useRef, useState, useCallback } from 'react'
 
-interface AnswerSelectorCardProps {
-    question: {
-        question: string
-        answers: Array<{
-            content: string
-            isValid: boolean
-        }>
-    }
-}
 
-export default function AnswerSelectorCard({ question }: AnswerSelectorCardProps) {
+
+export default function AnswerSelectorCard({ question }: any) {
     const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
     const [isVisible, setIsVisible] = useState(false)
     const cardRef = useRef<HTMLDivElement>(null)
