@@ -35,7 +35,7 @@ function App() {
     <>
 
 
-      <button className='bg-blue-700 rounded-lg p-3 fixed bottom-5 right-5 text-white font-bold' onClick={() => {
+      <button className='bg-blue-700 rounded-lg p-3  z-3000000 fixed bottom-5 right-5 text-white font-bold' onClick={() => {
         window.location.href = '/'
       }}>
         PLAY AGAIN
