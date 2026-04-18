@@ -135,7 +135,7 @@ export default function AnswerSelectorCard({ question }: any) {
                         `}>
                             {question.answers[selectedAnswer].isValid
                                 ? '🎉 ¡Correcto!'
-                                : `💡 La respuesta correcta era la ${question.answers.findIndex(a => a.isValid) + 1}`
+                                : `💡 La respuesta correcta era la ${question.answers.findIndex((a: any) => a.isValid) + 1}`
                             }
                         </div>
                     </div>
