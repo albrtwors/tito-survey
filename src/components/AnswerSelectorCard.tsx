@@ -69,7 +69,7 @@ export default function AnswerSelectorCard({ question }: any) {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    {question.answers.map((answer, index) => (
+                    {question.answers.map((answer: any, index: any) => (
                         <div
                             key={index}
                             onClick={() => !selectedAnswer && handleAnswerClick(index)}
