@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface Answer {
     content: string
@@ -11,16 +11,20 @@ interface Question {
 }
 
 interface AnswerSelectorCardProps {
-    question: Question
+    question: Question,
+    questions: any
 }
 
-export default function AnswerSelectorCard({ question }: AnswerSelectorCardProps) {
+export default function AnswerSelectorCard({ question, questions }: AnswerSelectorCardProps) {
     const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
 
     const handleAnswerClick = (index: number) => {
         setSelectedAnswer(index)
         console.log(`Seleccionaste: ${question.answers[index].content}`)
     }
+    useEffect(() => {
+        setSelectedAnswer(null)
+    }, [question, questions])
 
     return (
         <div className="max-w-3xl mx-auto">

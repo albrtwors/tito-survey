@@ -26,6 +26,7 @@ function randomizeQuestion(questions: any): any {
 function App() {
   const [uestions, setQuestions] = useState<any>(questions)
   const randomQuestionsCallback = useCallback(randomizeQuestion, uestions)
+
   useEffect(() => {
     setQuestions(randomQuestionsCallback(uestions))
   }, [])
@@ -37,10 +38,13 @@ function App() {
       <h1 className='text-3xl font-bold text-center'>Survey del libro de Tito</h1>
       <div className='mx-5'>
         <button
-          onClick={() => setQuestions(randomQuestionsCallback(uestions))}
+          onClick={() => {
+
+            setQuestions(randomQuestionsCallback(uestions))
+          }}
           className='bg-linear-60 from-blue-700 to-blue-800 rounded-lg w-full text-center hover:opacity-80 transition p-3 text-lg font-bold  text-white'>Randomizar preguntas</button>
       </div>
-      {uestions.map((question: any) => <AnswerSelectorCard question={question}></AnswerSelectorCard>)}
+      {uestions.map((question: any) => <AnswerSelectorCard questions={uestions} question={question}></AnswerSelectorCard>)}
 
 
       <div className='flex flex-col gap-3'></div>
