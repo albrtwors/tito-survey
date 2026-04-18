@@ -15,16 +15,14 @@ interface AnswerSelectorCardProps {
     questions: any
 }
 
-export default function AnswerSelectorCard({ question, questions }: AnswerSelectorCardProps) {
+export default function AnswerSelectorCard({ question }: AnswerSelectorCardProps) {
     const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
 
     const handleAnswerClick = (index: number) => {
         setSelectedAnswer(index)
         console.log(`Seleccionaste: ${question.answers[index].content}`)
     }
-    useEffect(() => {
-        setSelectedAnswer(null)
-    }, [question, questions])
+
 
     return (
         <div className="max-w-3xl mx-auto">

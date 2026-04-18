@@ -1,4 +1,157 @@
 export const questions: any = [
+    {
+        "question": "Conforme a qué Pablo era siervo de Dios y apóstol de Jesucristo? (1:1)",
+        "answers": [
+            {
+                "content": "Conforme a voluntad de hombre",
+                "isValid": false
+            },
+            {
+                "content": "Conforme a la gracia",
+                "isValid": false
+            },
+            {
+                "content": "Conforme a la fe de los escogidos de Dios, y el conocimiento de la verdad que es según la piedad",
+                "isValid": true
+            }
+        ]
+    },
+    {
+        "question": "Cuál es el propósito de la esperanza de vida eterna? (1:2)",
+        "answers": [
+            {
+                "content": "Prometida antes de los tiempos de los siglos",
+                "isValid": true
+            },
+            {
+                "content": "Prometida en el nuevo testamento",
+                "isValid": false
+            },
+            {
+                "content": "Prometida solo a los apóstoles",
+                "isValid": false
+            }
+        ]
+    },
+    {
+        "question": "Pablo dejó a Tito en Creta para que (1:5)",
+        "answers": [
+            {
+                "content": "Corrigiese lo que falta",
+                "isValid": true
+            },
+            {
+                "content": "Predicase el evangelio",
+                "isValid": false
+            },
+            {
+                "content": "Estableciese ancianos en cada ciudad",
+                "isValid": false
+            }
+        ]
+    },
+    {
+        "question": "El obispo debe ser irreprensible (1:6)",
+        "answers": [
+            {
+                "content": "Marido de una sola mujer",
+                "isValid": false
+            },
+            {
+                "content": "Que tenga hijos fieles",
+                "isValid": false
+            },
+            {
+                "content": "Todo lo anterior",
+                "isValid": true
+            }
+        ]
+    },
+    {
+        "question": "El obispo no puede ser (1:7)",
+        "answers": [
+            {
+                "content": "Avaro",
+                "isValid": false
+            },
+            {
+                "content": "Goloso",
+                "isValid": false
+            },
+            {
+                "content": "Ambas anteriores",
+                "isValid": true
+            }
+        ]
+    },
+    {
+        "question": "Los ancianos deben sujetar a los rebeldes (1:10)",
+        "answers": [
+            {
+                "content": "Con reprensión",
+                "isValid": true
+            },
+            {
+                "content": "Con amor",
+                "isValid": false
+            },
+            {
+                "content": "Ignorándolos",
+                "isValid": false
+            }
+        ]
+    },
+    {
+        "question": "Los rebeldes son especialmente los de la (1:10)",
+        "answers": [
+            {
+                "content": "Circuncisión",
+                "isValid": true
+            },
+            {
+                "content": "Gentilidad",
+                "isValid": false
+            },
+            {
+                "content": "Sinagoga",
+                "isValid": false
+            }
+        ]
+    },
+    {
+        "question": "Perfil del anciano según 2:2 (v2:2)",
+        "answers": [
+            {
+                "content": "Sobrios, reverentes, sensatos",
+                "isValid": false
+            },
+            {
+                "content": "Sanos en la fe, en el amor y en la paciencia",
+                "isValid": false
+            },
+            {
+                "content": "Todo lo anterior",
+                "isValid": true
+            }
+        ]
+    },
+    {
+        "question": "Las ancianas no deben ser (2:3)",
+        "answers": [
+            {
+                "content": "Calumniadoras",
+                "isValid": false
+            },
+            {
+                "content": "Esclavas del vino",
+                "isValid": false
+            },
+            {
+                "content": "Ambas anteriores",
+                "isValid": true
+            }
+        ]
+    },
 
     {
         "question": "Conforme a qué, Pablo era siervo de Dios y apóstol de Jesucristo? (1:1)",

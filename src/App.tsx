@@ -35,11 +35,16 @@ function App() {
     <>
 
 
+      <button className='bg-blue-700 rounded-lg p-3 fixed bottom-5 right-5 text-white font-bold' onClick={() => {
+        window.location.href = '/'
+      }}>
+        PLAY AGAIN
+      </button>
+
       <h1 className='text-3xl font-bold text-center'>Survey del libro de Tito</h1>
       <div className='mx-5'>
         <button
           onClick={() => {
-
             setQuestions(randomQuestionsCallback(uestions))
           }}
           className='bg-linear-60 from-blue-700 to-blue-800 rounded-lg w-full text-center hover:opacity-80 transition p-3 text-lg font-bold  text-white'>Randomizar preguntas</button>
